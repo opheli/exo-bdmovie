@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Exercice</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="exercise.css" />
 </head>
+
 <body>
-   
+
     <div class="container">
         <div class="row">
-           
+
             <div class="col-12 exercise">
                 <div id="exercise">
                     <input class="form-control mb-3" value="votre recherche" />
                     <button class="btn btn-success">Rechercher</button>
-                    <p>Country: <span id="country"></span></p>
-                    <p>Capital: <span id="capital"></span></p>
-                    
+                    <div class="row mt-4 col-8 offset-2" id="pagination"></div>
+                    <!-- SEARCH RESULTS IN CASE OF ERROR -->
+                    <div class="row mt-4 col-8 offset-2">
+                      <!-- RESULTS COUNT -->
+                      <div class="results-count"></div>
+                      <!-- RESULTS LIST -->
+                      <div class="results-list">
+                        <!-- c'est ici que vont s'afficher les films -->
+                      </div>
+                    </div>
+                    <!-- RESULT PAGINATION -->
+                    <div class="row mt-4 col-6 offset-3"></div>
+                  </div>
+
                 </div>
             </div>
         </div>
@@ -24,4 +37,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
